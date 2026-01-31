@@ -1,11 +1,24 @@
-# Lab 01 – Network Topology
+# Configuration Summary – Lab 01
 
-This diagram represents the initial network segmentation and firewall placement.
-[ Internet ]
-|
-(NAT)
-|
-[ pfSense WAN ]
-[ pfSense LAN ] ─── 192.168.59.0/24 ─── [ Management / Security VMs ]
+## Firewall
+- Platform: pfSense CE 2.7.2
+- Deployment: VMware Workstation
+- Disk: Guided install
 
-A visual diagram will be added once the lab topology stabilizes.
+## Interfaces
+- WAN (em0)
+  - Type: NAT (VMnet8)
+  - Addressing: DHCP
+- LAN (em1)
+  - Type: Host-only (VMnet1)
+  - Address: 192.168.59.1/24
+
+## Services
+- DHCP enabled on LAN
+  - Range: 192.168.59.100–199
+- WebConfigurator enabled (HTTPS)
+- Default firewall rules in place for LAN management access
+
+## Notes
+This configuration establishes a stable perimeter baseline for subsequent testing and monitoring labs.
+
