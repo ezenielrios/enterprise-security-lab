@@ -3,7 +3,7 @@
 ## Firewall
 - Platform: pfSense CE 2.7.2
 - Deployment: VMware Workstation
-- Disk: Guided install
+- Disk: Default pfSense installer configuration (no custom partitioning)
 
 ## Interfaces
 - WAN (em0)
