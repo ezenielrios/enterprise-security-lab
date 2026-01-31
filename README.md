@@ -1,82 +1,96 @@
 # Enterprise Security Lab
 
 ## Overview
-This repository documents the design and execution of a hands-on, enterprise-style information security lab built using entirely free and open-source tools. The lab is structured to simulate real-world security operations, including network discovery, vulnerability assessment, adversarial testing, and defensive validation.
 
-The goal of this project is to demonstrate practical security engineering skills through repeatable workflows, clear documentation, and evidence-based analysis rather than tool screenshots alone.
+This repository documents the design and implementation of an enterprise-style information security lab built using free and open-source tools. The lab simulates real-world security operations across networking, detection, vulnerability management, adversary simulation, and incident response.
 
----
+The focus is on **professional security workflows**, not CTF-style challenges.
 
-## Objectives
-- Design a realistic multi-segment lab environment
-- Perform structured security testing aligned with enterprise practices
-- Document findings with professional clarity and restraint
-- Emphasize methodology, scope control, and ethical testing
-- Bridge offensive and defensive security perspectives
+This project is designed to reflect how security teams operate in production environments: building infrastructure first, validating visibility, then layering testing, monitoring, and response capabilities.
 
 ---
 
-## Lab Architecture (High-Level)
-- Virtualized environment using VMware
-- pfSense firewall for routing, segmentation, and traffic control
-- Isolated LAN and WAN simulation
-- Attacker, target, and management segments
-- Logging and inspection points for defensive visibility
+## Goals
 
-> Detailed diagrams and configuration notes are maintained in the `/docs` directory.
+- Build a realistic enterprise security lab from the ground up  
+- Practice defensive and offensive security workflows end-to-end  
+- Document methodology, tooling, and decision-making clearly  
+- Demonstrate hands-on capability aligned with security engineering roles  
 
 ---
 
-## Tools & Technologies
-- pfSense (Firewall & Network Segmentation)
-- Kali Linux (Security Testing Platform)
-- Nmap (Network Discovery & Enumeration)
-- OpenVAS / Greenbone (Vulnerability Assessment)
-- Burp Suite Community (Web Application Testing)
-- Docker (Vulnerable Application Hosting)
-- Linux & Windows test systems
-
-Only tools appropriate to each lab phase are used to avoid unnecessary noise.
-
----
-
-## Repository Structure
+## Lab Structure
 
 enterprise-security-lab/
-├── docs/ # Architecture notes, diagrams, and methodology
-├── labs/ # Individual lab exercises and walkthroughs
-├── evidence/ # Sanitized outputs, logs, and findings
-├── README.md # Project overview (this file)
-└── LICENSE
-
-
----
-
-## Methodology
-Each lab follows a consistent structure:
-1. **Objective & Scope Definition**
-2. **Environment Preparation**
-3. **Execution & Observation**
-4. **Findings & Analysis**
-5. **Defensive Implications**
-6. **Lessons Learned**
-
-This ensures results are repeatable, explainable, and defensible.
+│
+├── labs/ # Step-by-step lab exercises
+├── evidence/ # Screenshots, logs, sanitized outputs
+├── docs/ # Architecture notes and design documentation
+└── README.md # Project overview (this file)
 
 ---
 
-## Ethical Use & Scope
-All testing documented in this repository is performed in isolated, intentionally vulnerable lab environments. No testing is conducted against systems without explicit authorization.
+## Technologies Used
+
+- pfSense (network perimeter & routing)
+- VMware Workstation
+- Linux security tooling (Nmap, OpenVAS, Burp Suite, etc.)
+- Dockerized vulnerable applications
+- Log analysis and traffic inspection tools
+
+> All tooling is deployed in isolated, controlled environments.
+
+---
+
+## Lab Progression
+
+### Lab 01 – Network & Firewall Foundations
+- pfSense deployment
+- WAN/LAN segmentation
+- Secure management access
+- Baseline network validation
+
+### Upcoming Labs
+- Network discovery & service enumeration
+- Vulnerability scanning & analysis
+- Web application security testing
+- Detection & logging validation
+- Incident response workflows
+
+---
+
+## Documentation Approach
+
+Each lab includes:
+- Clear objectives
+- Environment details
+- Configuration steps
+- Validation checks
+- Security observations
+- Evidence references
+
+All sensitive data is sanitized prior to publication.
+
+---
+
+## Certifications Context
+
+This lab reinforces hands-on skills aligned with:
+- Defensive security analysis
+- Adversarial testing fundamentals
+- Network and application security assessment
+
+The project emphasizes **practical application over exam simulation**.
 
 ---
 
 ## Status
-**In Progress**  
-Labs are added incrementally to ensure accuracy, clarity, and relevance.
+
+**In Progress** — actively expanding lab scope and documentation.
 
 ---
 
-## Author
-**Ezeniel Rios**  
-Cybersecurity Practitioner | Security Analysis & Testing  
+## Disclaimer
 
+This repository is for educational and professional development purposes only.  
+All testing is performed in isolated lab environments under full authorization.
