@@ -1,0 +1,6 @@
+Firewall Validation Summary
+
+- ICMP echo requests from LAN to WAN were blocked
+- ICMP from LAN to pfSense gateway allowed
+- Default LAN allow rule remained in place
+- Firewall logs confirmed rule enforcement
