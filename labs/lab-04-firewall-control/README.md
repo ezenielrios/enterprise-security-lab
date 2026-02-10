@@ -25,11 +25,11 @@ This lab focuses on understanding default firewall posture, interface trust boun
 Supporting validation artifacts are stored in:
 evidence/
 
--lab-04-default-lan-rules.png (baseline LAN rules before change)
--lab-04-icmp-block-rule.png (ICMP deny rule present/positioned
--lab-04-baseline-ping.png (ping allowed/working OR baseline)
--lab-04-kali-ping-blocked.png (ping blocked after rule)
--lab-04-firewall-logs.png (log entry showing block)
+- lab-04-default-lan-rules.png (baseline LAN rules before change)
+- lab-04-icmp-block-rule.png (ICMP deny rule present/positioned
+- lab-04-baseline-ping.png (ping allowed/working OR baseline)
+- lab-04-kali-ping-blocked.png (ping blocked after rule)
+- lab-04-firewall-logs.png (log entry showing block)
 
 Screenshots and command outputs are sanitized and selectively included.
 
